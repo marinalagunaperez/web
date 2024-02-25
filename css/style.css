@@ -290,4 +290,55 @@ figure {
   }
 }
 
+.carrusel {
+  position: relative;
+  max-width: 600px; /* Ajusta esto según el tamaño deseado */
+  margin: auto;
+}
+
+.carrusel-imagenes img {
+  width: 100%;
+  display: none;
+}
+
+.carrusel-imagenes video {
+  width: 100%;
+  display: none;
+}
+
+.anterior, .siguiente {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centrar verticalmente */
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5); /* Fondo translúcido */
+  border: none; /* Remover bordes si existen */
+}
+
+.anterior {
+  left: 0;
+}
+
+.siguiente {
+  right: 0;
+}
+
+.anterior:hover, .siguiente:hover {
+  background-color: rgba(0,0,0,0.8); /* Fondo más oscuro al pasar el ratón */
+}
+
+/* Asegúrate de que la primera imagen se muestre */
+.carrusel-imagenes img:first-of-type {
+  display: block;
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
