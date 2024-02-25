@@ -19,6 +19,9 @@ body {
   color: #848484;
   font-weight: 300;
   overflow-x: hidden;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
 }
 body.fh5co-offcanvas {
   overflow: hidden;
@@ -72,32 +75,40 @@ figure {
 }
 
 #fh5co-header {
-  padding-top: 40px;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+  background: #ffffff; /* Assuming a white background; change as needed */
 }
-#fh5co-header #fh5co-logo img {
-  max-width: 100%;
+#fh5co-logo img {
+  width: 40%;
 }
 #fh5co-header nav {
   padding-top: 20px;
 }
 #fh5co-header nav ul {
-  padding: 0;
+  list-style: none;
+  display: flex;
   margin: 0;
+  padding: 0;
 }
 #fh5co-header nav ul li {
-  padding: 0;
+  padding: 0 15px;
   margin: 0;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   list-style: none;
   font-size: 15px;
 }
 #fh5co-header nav ul li a {
-  color: #999999 !important;
   padding: 10px;
+  text-decoration: none;
+  color: #999999;
+  font-size: 16px; /* Adjust font size as needed */
 }
 @media screen and (max-width: 480px) {
   #fh5co-header nav ul li a {
@@ -110,7 +121,6 @@ figure {
   outline: none;
 }
 #fh5co-header nav ul li.active a {
-  text-decoration: line-through !important;
   color: black !important;
 }
 
