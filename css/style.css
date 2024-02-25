@@ -190,6 +190,31 @@ figure {
     padding-right: 15px;
   }
 }
+
+@media (max-width: 768px) {
+  #fh5co-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  #fh5co-logo {
+      order: -1; /* Esto colocará el logo arriba */
+      width: 100%; /* Ajusta el ancho si es necesario */
+      /* Centrar el logo si lo deseas */
+      display: flex;
+      justify-content: center;
+  }
+
+  nav {
+      width: 100%; /* Ocupar el ancho completo en móviles */
+      order: 1; /* Esto colocará el menú de navegación debajo del logo */
+  }
+
+  nav ul li {
+      text-align: center; /* Centrar los elementos del menú si se desea */
+      width: 100%; /* Ocupar el ancho completo para cada elemento de la lista */
+  }
+}
 .page-content .mb0 {
   margin-bottom: 0;
 }
