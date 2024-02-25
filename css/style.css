@@ -191,7 +191,7 @@ figure {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   #fh5co-header {
       flex-direction: column;
       align-items: flex-start;
