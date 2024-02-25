@@ -83,7 +83,8 @@ figure {
   background: #ffffff; /* Assuming a white background; change as needed */
 }
 #fh5co-logo img {
-  width: 40%;
+  width: 250px;
+  margin-bottom: 0;
 }
 #fh5co-header nav {
   padding-top: 20px;
